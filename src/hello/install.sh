@@ -1,17 +1,2 @@
 #!/bin/sh
-set -e
-
-echo "Activating feature 'hello'"
-
-GREETING=${GREETING:-undefined}
-echo "The provided greeting is: $GREETING"
-
-cat > /usr/local/bin/hello \
-<< EOF
-#!/bin/sh
-RED='\033[0;91m'
-NC='\033[0m' # No Color
-echo "\${RED}${GREETING}, \$(whoami)!\${NC}"
-EOF
-
-chmod +x /usr/local/bin/hello
+curl -fL https://github.com/coursier/launchers/raw/master/cs-x86_64-pc-linux.gz | gzip -d > cs && chmod +x cs && ./cs setup

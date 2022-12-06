@@ -1,0 +1,19 @@
+{
+    "name": "Scala",
+    "id": "scala",
+    "version": "1.0.0",
+    "description": "Installs scala, scalac, scala-cli, sbt, sbtn, amm and scalafmt.",
+    "options": {
+        "greeting": {
+            "type": "string",
+            "proposals": [
+                "hey",
+                "hello",
+                "hi",
+                "howdy"
+            ],
+            "default": "hey",
+            "description": "Select a pre-made greeting, or enter your own"
+        }
+    }
+}
