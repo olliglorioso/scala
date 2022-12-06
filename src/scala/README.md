@@ -7,8 +7,8 @@ A hello world feature
 
 ```json
 "features": {
-    "ghcr.io/devcontainers/feature-starter/hello:1": {
-        "version": "latest"
+    "ghcr.io/devcontainers/olliglorioso/scala:1": {
+        "version": "lts"
     }
 }
 ```
@@ -17,7 +17,7 @@ A hello world feature
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| greeting | Select a pre-made greeting, or enter your own | string | hey |
+| version | Select Scala version to install | string | lts |
 
 
 
